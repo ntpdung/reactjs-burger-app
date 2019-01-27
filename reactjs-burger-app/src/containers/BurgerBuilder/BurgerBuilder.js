@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Aux from '../../hoc/aux';
-import Burger from '../../components/Burger/Burger'
+import Burger from '../../components/Burger/Burger';
+import burgerStyle from "../../components/Burger/Burger.css";
 
 class BurgerBuilder extends Component {
     render () {

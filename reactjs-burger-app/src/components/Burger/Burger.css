@@ -1,41 +1,6 @@
 .burger {
+    height: 400px;
     width: 250px;
     float: left;
     padding: 10px 20px;
-}
-
-.burger .ingredient {
-    height: 15px;
-}
-
-.burger .ingredientBreadTop {
-    background-color: peru;
-    height: 34px;
-    border-radius: 500px 500px 4px 4px;
-}
-
-.burger .ingredientBreadBottom {
-    background-color: peru;
-    height: 25px;
-    border-radius: 0px 0px 4px 4px;
-}
-
-.burger .ingredientSalad {
-    background-color: #8cc63e;
-}
-
-.burger .ingredientTomato {
-    background-color: #f31f2b;
-}
-
-.burger .ingredientEgg {
-    background-color: beige;
-}
-
-.burger .ingredientCheese {
-    background-color: #ffca05;
-}
-
-.burger .ingredientMeat {
-    background-color: #a23b34;
 }
