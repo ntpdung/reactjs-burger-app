@@ -4,3 +4,8 @@
     float: left;
     padding: 10px 20px;
 }
+
+.emptyNote {
+    text-align: center;
+    font-weight: bold;
+}
