@@ -1,8 +1,9 @@
 .burger {
     height: 400px;
-    width: 250px;
+    width: 20%;
     float: left;
     padding: 10px 20px;
+    box-sizing: border-box;
 }
 
 .emptyNote {

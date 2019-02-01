@@ -1,11 +1,15 @@
 import React from 'react';
 import BuildControl from './BuildControl/BuildControl';
-import { prependOnceListener } from 'cluster';
+import buildControlsStyle from './BuildControls.css';
 
 const buildControls = (props) => {
+    let buildControls = Object.keys(props.labels).map((label) => {
+        return <BuildControl label={label} />
+    });
+
     return (
-        <div>
-            <BuildControl label={props.label} />
+        <div className={buildControlsStyle.buildControls}>
+            {buildControls}
         </div>
     );
 };

@@ -15,14 +15,15 @@ class BurgerBuilder extends Component {
     };
 
     render () {
-        let buildControls = Object.keys(this.state.ingredients).map((ingredient) => {
-            return <BuildControls label={ingredient} />
-        });
+        let style = {
+            clear: "both"
+        };
         
         return (
             <Aux>
                 <Burger ingredients={this.state.ingredients}/>
-                { buildControls }
+                <BuildControls labels={this.state.ingredients}/>
+                <div style={style}></div>
             </Aux>
         );
     };

@@ -5,8 +5,8 @@ const buildControl = (props) => {
     return (
         <div className={buildControlStyle.buildControl}>
             <label>{props.label}</label>
-            <div>Less</div>
-            <div>More</div>
+            <div className={buildControlStyle.adjustBtn}>Less</div>
+            <div className={buildControlStyle.adjustBtn}>More</div>
         </div>
     );
 };
