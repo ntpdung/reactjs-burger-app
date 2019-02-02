@@ -5,9 +5,21 @@
     margin: 5px 0;
 }
 
+.buildControl label {
+    min-width: 110px;
+    font-weight: bold;
+}
+
 .buildControl .adjustBtn {
     background-color: #AA6817;
-    padding: 5px;
+    padding: 5px 15px;
     cursor: pointer;
     outline: none;
+    margin: 5px;
+    color: #fff;
+    border: 1px solid rgb(220, 139, 39);
+}
+
+.buildControl .lessBtn {
+    background-color: #c3ae93;
 }

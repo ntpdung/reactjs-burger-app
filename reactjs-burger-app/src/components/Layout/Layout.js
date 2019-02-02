@@ -4,10 +4,10 @@ import layoutStyle from './Layout.css'
 
 const layout = (props) => (
     <Aux>
-        <div>
+        <div className={layoutStyle.header}>
             toolbar, sidedrawer, backdrop
         </div>
-        <main className={layoutStyle.Content}>
+        <main className={layoutStyle.content}>
             {props.children}
         </main>
     </Aux>

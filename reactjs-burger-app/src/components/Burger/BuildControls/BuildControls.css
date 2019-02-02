@@ -1,8 +1,9 @@
 .buildControls {
-    width: 80%;
-    float: left;
+    width: 55%;
+    display: flex;
     flex-flow: column;
     align-items: center;
-    /* background-color: #CF8F2E; */
-
+    margin: 0 auto;
+    border: 1px solid #5b5b5b;
+    padding: 15px 0;
 }

@@ -8,9 +8,10 @@ import buildControls from '../../components/Burger/BuildControls/BuildControls';
 class BurgerBuilder extends Component {
     state = {
         ingredients: {
-            cheese: 0,
-            meat: 0,
-            salad: 3
+            salad: 1,
+            cheese: 1,
+            tomato: 1,
+            meat: 2,
         }
     };
 

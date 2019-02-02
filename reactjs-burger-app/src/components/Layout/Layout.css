@@ -1,6 +1,13 @@
 
-.Content {
-    margin-top: 15px;
-    max-width: 80%;
-    margin: 0 auto;
+.header {
+    background-color: #d27c41;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.content {
+    max-width: 60%;
+    display: flex;
+    align-items: flex-end;
+    margin: 30px auto 0;
 }

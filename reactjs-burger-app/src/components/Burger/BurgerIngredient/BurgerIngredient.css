@@ -5,7 +5,7 @@
 }
 
 .ingredientBreadTop {
-    height: 20%;
+    height: 70px;
     width: 80%;
     background: linear-gradient(#bc581e, #e27b36);
     border-radius: 50% 50% 0 0;
@@ -15,16 +15,16 @@
 }
 
 .ingredientBreadBottom {
-    height: 13%;
+    height: 50px;
     background: linear-gradient(#F08E4A, #e27b36);
     border-radius: 0 0 30px 30px;
     box-shadow: inset -15px 0 #c15711;
-    margin: 2% auto;
+    margin: 2% auto 0;
 }
 
 .seeds1 {
-    width: 10%;
-    height: 15%;
+    width: 10px;
+    height: 30px;
     position: absolute;
     background-color: white;
     left: 30%;
@@ -40,8 +40,8 @@
     height: 100%;
     position: absolute;
     background-color: white;
-    left: -170%;
-    top: -260%;
+    left: -200%;
+    top: -100%;
     border-radius: 40%;
     transform: rotate(60deg);
     box-shadow: inset -1px 2px #c9c9c9;
@@ -53,8 +53,8 @@
     height: 100%;
     position: absolute;
     background-color: white;
-    left: 180%;
-    top: -50%;
+    left: 500%;
+    top: 0;
     border-radius: 40%;
     transform: rotate(60deg);
     box-shadow: inset -1px -3px #c9c9c9;
@@ -62,7 +62,7 @@
 
   .seeds2 {
     width: 10%;
-    height: 15%;
+    height: 10px;
     position: absolute;
     background-color: white;
     left: 64%;
@@ -87,14 +87,14 @@
 
 .ingredientSalad {
     width: 85%;
-    height: 7%;
+    height: 15px;
     background: linear-gradient(#228c1d, #91ce50);
 }
 
 .ingredientTomato {
     width: 85%;
-    height: 4.5%;
-    background: linear-gradient(#bf3813, #f31f2b);
+    height: 15px;
+    background: linear-gradient(#bf3813, #e41a25);
 }
 
 /* .ingredientEgg {
@@ -105,13 +105,13 @@
 
 .ingredientCheese {
     width: 90%;
-    height: 3%;
+    height: 8px;
     background: linear-gradient(#f4d004, #d6bb22);
 }
 
 .ingredientMeat {
     width: 80%;
-    height: 8%;
+    height: 20px;
     background: linear-gradient(#7f3608, #702e05);
     border-radius: 15px;
 }
