@@ -7,7 +7,8 @@ const buildControls = (props) => {
         return <BuildControl 
             key={label + index} 
             label={label}
-            added={() => props.addedIngredient(label)} />
+            add={() => props.addedIngredient(label)} 
+            remove={() => props.removeIngredient(label)}/>
     });
 
     return (

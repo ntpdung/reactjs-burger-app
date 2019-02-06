@@ -23,15 +23,40 @@ class BurgerBuilder extends Component {
         totalPrice: 14
     };
 
-    addedIngredientHandler = (type) => {
-        let oldIngredientCount, newIngredientCount, updatedIngredients, updatedPrice;
+    addIngredientHandler = (type) => {
+        let oldIngredientCount, newIngredientCount, updatedIngredients, 
+            oldPrice, newPrice, priceAddition;
         oldIngredientCount = this.state.ingredients[type];
         newIngredientCount = oldIngredientCount + 1;
         updatedIngredients = { 
             ...this.state.ingredients
         };
+        
+        priceAddition = INGREDIENTS_PRICE[type];
+        oldPrice = this.state.totalPrice;
+        newPrice = oldPrice + priceAddition;
         updatedIngredients[type] = newIngredientCount;
-        this.setState({ ingredients: updatedIngredients, totalPrice: updatedPrice });
+        this.setState({ ingredients: updatedIngredients, totalPrice: newPrice });
+    };
+
+    removeIngredientHandler = (type) => {
+        let oldIngredientCount, newIngredientCount, updatedIngredients, updatedPrice,
+            oldPrice, newPrice, priceDeduction;
+        oldIngredientCount = this.state.ingredients[type];
+        if (oldIngredientCount <= 0) {
+            return false;
+        }
+
+        newIngredientCount = oldIngredientCount - 1;
+        updatedIngredients = {
+            ...this.state.ingredients
+        };
+
+        priceDeduction = INGREDIENTS_PRICE[type];
+        oldPrice = this.state.totalPrice;
+        newPrice = oldPrice - priceDeduction;
+        updatedIngredients[type] = newIngredientCount;
+        this.setState({ ingredients: updatedIngredients, totalPrice: newPrice });
     };
 
     render () {
@@ -41,10 +66,12 @@ class BurgerBuilder extends Component {
         
         return (
             <Aux>
+                <p>{this.state.totalPrice}$</p>
                 <Burger ingredients={this.state.ingredients}/>
                 <BuildControls
                     labels={this.state.ingredients}
-                    addedIngredient={this.addedIngredientHandler}/>
+                    addedIngredient={this.addIngredientHandler}
+                    removeIngredient={this.removeIngredientHandler}/>
                 <div style={style}></div>
             </Aux>
         );
