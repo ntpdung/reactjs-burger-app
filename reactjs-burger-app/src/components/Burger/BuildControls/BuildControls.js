@@ -8,7 +8,8 @@ const buildControls = (props) => {
             key={label + index} 
             label={label}
             add={() => props.addedIngredient(label)} 
-            remove={() => props.removeIngredient(label)}/>
+            remove={() => props.removeIngredient(label)}
+            isDisabled={props.disabledInfo[label]}/>
     });
 
     return (

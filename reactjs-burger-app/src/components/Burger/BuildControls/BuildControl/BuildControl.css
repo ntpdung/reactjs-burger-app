@@ -23,3 +23,10 @@
 .buildControl .lessBtn {
     background-color: #c3ae93;
 }
+
+.buildControl .lessBtn:disabled {
+    background-color: #C7C6C6;
+    cursor: not-allowed;
+    border: 1px solid #ccc;
+    color: #888888;
+}

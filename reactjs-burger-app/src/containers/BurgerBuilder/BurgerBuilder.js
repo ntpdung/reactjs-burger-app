@@ -60,9 +60,11 @@ class BurgerBuilder extends Component {
     };
 
     render () {
-        let style = {
-            clear: "both"
-        };
+
+        let disabledInfo = { ...this.state.ingredients };
+        for(let key in disabledInfo) {
+            disabledInfo[key] = disabledInfo[key] <= 0;
+        }
         
         return (
             <Aux>
@@ -71,8 +73,9 @@ class BurgerBuilder extends Component {
                 <BuildControls
                     labels={this.state.ingredients}
                     addedIngredient={this.addIngredientHandler}
-                    removeIngredient={this.removeIngredientHandler}/>
-                <div style={style}></div>
+                    removeIngredient={this.removeIngredientHandler}
+                    disabledInfo={disabledInfo}/>
+                <div style={{ clear: 'both' }}></div>
             </Aux>
         );
     };
