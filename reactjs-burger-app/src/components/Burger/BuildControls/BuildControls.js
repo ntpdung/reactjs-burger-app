@@ -14,7 +14,9 @@ const buildControls = (props) => {
 
     return (
         <div className={buildControlsStyle.buildControls}>
+            <p>Current Price: <b>{props.totalPrice}$</b></p>
             {buildControls}
+            <button className={buildControlsStyle.orderButton}>ORDER NOW</button>
         </div>
     );
 };

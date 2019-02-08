@@ -12,6 +12,7 @@
 
 .buildControl .adjustBtn {
     background-color: #AA6817;
+    font-size: 16px;
     padding: 5px 15px;
     cursor: pointer;
     outline: none;
